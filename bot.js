@@ -336,7 +336,7 @@ m.sendMessage(args)
 }
 });
 
-const prefix = "*"
+const prefix = "-"
 client.on('message', async msg => { 
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(prefix)) return undefined;
@@ -1504,7 +1504,7 @@ msg.channel.send(embed).then(() => {
 
 client.on('ready', function(){	
     var ms = 40000 ;	
-    var setGame = ['-inv','-help'];	
+var setGame = ['Magic World','Magic Your Life'];
     var i = -1;	
     var j = 0;	
     setInterval(function (){	

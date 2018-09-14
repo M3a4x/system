@@ -148,7 +148,7 @@ client.on('message', msg => {
 
 client.on("message", message => {
 	var prefix = "*";
- if (message.content === "-help") {
+ if (message.content === "*help") {
   const embed = new Discord.RichEmbed()  
       .setColor("#000000") 
       .setDescription(`
@@ -184,7 +184,7 @@ client.on("message", message => {
 ❖-bot ~ يعرض لك كل معلومات البوت
 ❖-skin <name> ~ يعرض لك سكنك بماين كرافت
 ❖-count ~ يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
-❖-invites ~ يعرض لك  عدد انفايتاتك بالسيرفر 
+❖ites ~ يعرض لك  عدد انفايتاتك بالسيرفر 
 ❖-invite-codes ~ يعرض لك روابط الانفايتات حكك في السيرفر 
 ❖-cal ~ اله حاسبة
 ❖-trans <language> <any thing> ~ يترجم لك الي تبيه من اي لغة
@@ -304,7 +304,7 @@ client.on('guildCreate', guild => {
      .setTitle('Click Here To Add Bot .!')
      .setURL('https://discordapp.com/oauth2/authorize?client_id=400489866573512705&permissions=8&scope=bot')
   .setDescription(`**
-  New Server Add Speed Bot ✅
+  New Server Add Magic World ✅
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("467833183254347797").sendEmbed(embed)
@@ -316,7 +316,7 @@ client.on('guildDelete', guild => {
      .setTitle('Click Here To Add Bot .!')
      .setURL('https://discordapp.com/oauth2/authorize?client_id=400489866573512705&permissions=8&scope=bot')
   .setDescription(`**
-  Server Kicked Speed Bot :cry:
+  Server Kicked Magic World :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("467833183254347797").sendEmbed(embed)
@@ -383,7 +383,7 @@ client.on('message', async msg => {
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 
-					.setFooter("Speed Bot")
+					.setFooter("Magic World")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					try {
@@ -881,7 +881,7 @@ client.on('message', message => {
             .setAuthor(client.user.username,client.user.avatarURL)
             .setThumbnail(client.user.avatarURL)
             .setColor('RANDOM')
-            .setTitle('``INFO Speed Bot`` ')
+            .setTitle('``INFO Magic World`` ')
             .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
             .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
             .addField('``servers``', [client.guilds.size], true)
@@ -1113,7 +1113,7 @@ function getValue(key, array) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-    let copy = "Speed Bot";
+    let copy = "Magic World";
     let request = `Requested By ${message.author.username}`;
     if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
     msg.react('✅')
@@ -2259,7 +2259,7 @@ client.on('message', message => {
     .setColor("#707070")
     .addField(': دخولك لديسكورد قبل', `${moment(heg.createdTimestamp).format('YYYY/M/D HH:mm:ss')} **\n** \`${moment(heg.createdTimestamp).fromNow()}\`` ,true) 
     .addField(': انضمامك لسيرفر قبل', `${moment(h.joinedAt).format('YYYY/M/D HH:mm:ss')} \n \`${moment(h.joinedAt).fromNow()}\``, true)               
-    .setFooter(`Speed Bot`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')                                 
+    .setFooter(`Magic World`, 'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')                                 
     .setThumbnail(heg.avatarURL);
     message.channel.send(id)
 }       });

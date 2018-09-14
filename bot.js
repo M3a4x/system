@@ -156,13 +156,11 @@ client.on("message", message => {
 	         Please Chose: 
 
 			 
-${prefix}help-public ⇏ اوامر عامة
+${prefix}public ⇏ اوامر عامة
 
-${prefix}help-admin ⇏ اوامر ادارة السيرفر
+${prefix}admin ⇏ اوامر ادارة السيرفر
 			 
-${prefix}help-games ⇏ اوامر الالعاب
-
-${prefix}help-music ⇏ اوامر الموسيقى
+${prefix}games ⇏ اوامر الالعاب
 
 	  `)
    message.channel.sendEmbed(embed)
@@ -173,40 +171,40 @@ ${prefix}help-music ⇏ اوامر الموسيقى
 
 client.on("message", message => {
 	var prefix = "*";
- if (message.content === "-help-public") {
+ if (message.content === "*public") {
 	 message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
       .setDescription(`
 			  اوامر عامة
-❖-allbots ~ لعرض جميع البوتات الي بالسيرفر
-❖-server ~يعرض لك معلومات عن السيرفر
-❖-bot ~ يعرض لك كل معلومات البوت
-❖-skin <name> ~ يعرض لك سكنك بماين كرافت
-❖-count ~ يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
+❖*allbots ~ لعرض جميع البوتات الي بالسيرفر
+❖*server ~يعرض لك معلومات عن السيرفر
+❖*bot ~ يعرض لك كل معلومات البوت
+❖*skin <name> ~ يعرض لك سكنك بماين كرافت
+❖*count ~ يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
 ❖ites ~ يعرض لك  عدد انفايتاتك بالسيرفر 
-❖-invite-codes ~ يعرض لك روابط الانفايتات حكك في السيرفر 
-❖-cal ~ اله حاسبة
-❖-trans <language> <any thing> ~ يترجم لك الي تبيه من اي لغة
-❖-short ~ يختصر لك رابط كبير الى رابط صغير
-❖-tag ~ يكتب لك الكلمة بشكل جميل وكبير
-❖-google ~ للبحث في قوقل عن طريق الدسكورد
-❖-perms ~ يعرض لك برمشناتك بالسيرفر
-❖-za5 ~ يزخرف لك كلمة او جملة
-❖-rooms ~ يعرض لك كل الرومات الي بالسيرفر مع عددها
-❖-roles ~ يعرض لك كل الرانكات بالسيرفر بشكل جميل
-❖-emojilist ~ يعرض لك كل الايموجيات الي بالسيرفر
-❖-say ~ يكرر الكلام الي تكتبو
-❖-image ~ صورة السيرفر
-❖-members ~ يعرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص
-❖-id ~ معلومات عنك
-❖-bans ~ عدد الاشخاص المبندة 
-❖-avatar ~ صورتك او صورة الي تمنشنو
-❖-embed ~ يكرر الي تقولو بشكل حلو
-❖-emoji <any things> ~ لتحويل اي كلمه تقولها الي ايموجي
-❖-inv ~ لدعوة البوت الى سيرفرك
-❖-support ~ سيرفر الدعم
-❖-contact ~ ارسال اقتراح او لمراسلة صاحب البوت
+❖*invite*codes ~ يعرض لك روابط الانفايتات حكك في السيرفر 
+❖*cal ~ اله حاسبة
+❖*trans <language> <any thing> ~ يترجم لك الي تبيه من اي لغة
+❖*short ~ يختصر لك رابط كبير الى رابط صغير
+❖*tag ~ يكتب لك الكلمة بشكل جميل وكبير
+❖*google ~ للبحث في قوقل عن طريق الدسكورد
+❖*perms ~ يعرض لك برمشناتك بالسيرفر
+❖*za5 ~ يزخرف لك كلمة او جملة
+❖*rooms ~ يعرض لك كل الرومات الي بالسيرفر مع عددها
+❖*roles ~ يعرض لك كل الرانكات بالسيرفر بشكل جميل
+❖*emojilist ~ يعرض لك كل الايموجيات الي بالسيرفر
+❖*say ~ يكرر الكلام الي تكتبو
+❖*image ~ صورة السيرفر
+❖*members ~ يعرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص
+❖*id ~ معلومات عنك
+❖*bans ~ عدد الاشخاص المبندة 
+❖*avatar ~ صورتك او صورة الي تمنشنو
+❖*embed ~ يكرر الي تقولو بشكل حلو
+❖*emoji <any things> ~ لتحويل اي كلمه تقولها الي ايموجي
+❖*inv ~ لدعوة البوت الى سيرفرك
+❖*support ~ سيرفر الدعم
+❖*contact ~ ارسال اقتراح او لمراسلة صاحب البوت
 `)
    message.author.sendEmbed(embed)
     
@@ -215,35 +213,35 @@ client.on("message", message => {
    
    client.on("message", message => {
 	var prefix = "*";
- if (message.content === "-help-admin") {
+ if (message.content === "*admin") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
       .setDescription(`
 	      اوامر ادارة السيرفر
-❖-move @user ~  لسحب الشخص الى روومك
-❖-bc ~ رسالة جماعية الى كل اعضاء السيرفر
-❖-role @user <rank> ~ لأعطاء رتبة لعضو معين
-❖-roleremove @user <rank> ~ لازالة الرتبة من شخص معين
-❖-role all <rank> ~ لأعطاء رتبة للجميع
-❖-role humans <rank> ~ لأعطاء رتبة للاشخاص فقط
-❖-role bots <rank> ~ لأعطاء رتبة لجميع البوتات
-❖-hchannel ~ اخفاء الشات
-❖-schannel ~ اضهار الشات المخفية
-❖-clr <numbr> ~ مسح الشات بعدد
-❖-clear ~ مسح الشات
-❖-mute @user <reason> ~ اعطاء العضو ميوت لازم رتبة <Muted>
-❖-unmute @user ~ لفك الميوت عن الشخص 
-❖-kick @user <reason> ~ طرد الشخص من السيرفر
-❖-ban @user <reason> ~ حضر الشخص من السيرفر
-❖-mutechannel ~ تقفيل الشات
-❖-unmutechannel ~ فتح الشات
-❖-dc ~ مسح كل الرومات
-❖-dr ~ <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات
-❖-ct <name> ~ انشاء شات
-❖-cv <name> ~ انشاء رووم فويس
-❖-delet <name> ~ مسح الشات او الرووم فويس
-❖-ccolors <number> ~ ينشا لك الوان مع كم الوان تبي
+❖*move @user ~  لسحب الشخص الى روومك
+❖*bc ~ رسالة جماعية الى كل اعضاء السيرفر
+❖*role @user <rank> ~ لأعطاء رتبة لعضو معين
+❖*roleremove @user <rank> ~ لازالة الرتبة من شخص معين
+❖*role all <rank> ~ لأعطاء رتبة للجميع
+❖*role humans <rank> ~ لأعطاء رتبة للاشخاص فقط
+❖*role bots <rank> ~ لأعطاء رتبة لجميع البوتات
+❖*hchannel ~ اخفاء الشات
+❖*schannel ~ اضهار الشات المخفية
+❖*clr <numbr> ~ مسح الشات بعدد
+❖*clear ~ مسح الشات
+❖*mute @user <reason> ~ اعطاء العضو ميوت لازم رتبة <Muted>
+❖*unmute @user ~ لفك الميوت عن الشخص 
+❖*kick @user <reason> ~ طرد الشخص من السيرفر
+❖*ban @user <reason> ~ حضر الشخص من السيرفر
+❖*mutechannel ~ تقفيل الشات
+❖*unmutechannel ~ فتح الشات
+❖*dc ~ مسح كل الرومات
+❖*dr ~ <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات
+❖*ct <name> ~ انشاء شات
+❖*cv <name> ~ انشاء رووم فويس
+❖*delet <name> ~ مسح الشات او الرووم فويس
+❖*ccolors <number> ~ ينشا لك الوان مع كم الوان تبي
 `)
    message.author.sendEmbed(embed)
     
@@ -252,24 +250,24 @@ client.on("message", message => {
 
    client.on("message", message => {
 	var prefix = "*";
- if (message.content === "-help-games") {
+ if (message.content === "*games") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
       .setDescription(`
           اوامر الالعاب
-❖-rps ~ حجر ورقة مقص
-❖-speed ~ اسرع كتابة
-❖-quas ~ اسئلة عامة
-❖-نكت ~ نكت 
-❖-لعبة فكك ~ فكك
-❖-عواصم عشوائية ~ عواصم
-❖-لعبة كت تويت ~ كت تويت
-❖-roll <number> ~ قرعة
-❖-لو خيروك بطريقة حلوة ~ لو خيروك
-❖-لعبة مريم ~ مريم
-❖-فوائد ونصائح  ~ هل تعلم
-❖-يعطيك عقابات قاسية ~ عقاب   `)
+❖*rps ~ حجر ورقة مقص
+❖*speed ~ اسرع كتابة
+❖*quas ~ اسئلة عامة
+❖*نكت ~ نكت 
+❖*لعبة فكك ~ فكك
+❖*عواصم عشوائية ~ عواصم
+❖*لعبة كت تويت ~ كت تويت
+❖*roll <number> ~ قرعة
+❖*لو خيروك بطريقة حلوة ~ لو خيروك
+❖*لعبة مريم ~ مريم
+❖*فوائد ونصائح  ~ هل تعلم
+❖*يعطيك عقابات قاسية ~ عقاب   `)
    message.author.sendEmbed(embed)
     
    }
@@ -277,7 +275,7 @@ client.on("message", message => {
 			  
 client.on("message", message => {
 	var prefix = "*";
- if (message.content === "-help-music") {
+ if (message.content === "*music223445322") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
       .setColor("#000000")
@@ -302,7 +300,7 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=400489866573512705&permissions=8&scope=bot')
+     .setURL('you don't have a Permission :(')
   .setDescription(`**
   New Server Add Magic World ✅
 اسم السيرفر: ${guild.name}
@@ -314,7 +312,7 @@ client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=400489866573512705&permissions=8&scope=bot')
+     .setURL('you don't have a Permission')
   .setDescription(`**
   Server Kicked Magic World :cry:
 اسم السيرفر: ${guild.name}

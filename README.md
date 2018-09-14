@@ -1,2 +1,2 @@
-# SBot-Sboter
-hleolrelrleroeoroer
+# Aarabic-bot
+discordyou23
